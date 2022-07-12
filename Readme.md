@@ -12,4 +12,5 @@
 - git add -> Adiciona arquivos e diretórios para commitar;
 - git commit -m "mensagem" -> Commita novas mundanças;
 - git status -> Visualiza o ciclo dos status dos arquivos;
-- git log -> Históricos das merges;
+- git log -> Mostra a hash do commit, o autor, a data e a mensagem de commit;
+- git log --decorate
