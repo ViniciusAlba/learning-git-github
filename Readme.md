@@ -21,3 +21,5 @@
 - git show hashDoCommit -> Mostra o que foi adicionado ou removido, detalhe por detalhe;
 - git diff -> Mostra as últimas coisas que foram feitas, é importante usar antes de commitar;
 - git diff --name-only -> Mostra somente o nome do arquivo que foi modificado;
+- git checkout nomeArquivo -> Retorna o arquivo para antes da edição (Isso fora do stage);
+- git reset HEAD nomeArquivo -> Remove do stage o arquivo do local que estamos. Tiramos da fila do stage;
