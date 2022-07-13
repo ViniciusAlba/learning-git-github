@@ -23,3 +23,6 @@
 - git diff --name-only -> Mostra somente o nome do arquivo que foi modificado;
 - git checkout nomeArquivo -> Retorna o arquivo para antes da edição (Isso fora do stage);
 - git reset HEAD nomeArquivo -> Remove do stage o arquivo do local que estamos. Tiramos da fila do stage;
+- git reset --soft nomeArquivo -> Não toca no arquivo de índice ou na árvore de trabalho (mas redefine o cabeçalho para <commit>, assim como todos os modos fazem). Isso deixa todos os seus arquivos alterados como "Changes to be committe" (Alterações onde serão realizados os commits), como o git status colocaria.
+- git reset --mixed nomeArquivo -> Redefine o índice, mas não a árvore de trabalho (ou seja, os arquivos alterados são preservados, mas não marcados para um commit) e relata o que não foi atualizado. Esta é a ação predefinida.
+- git reset --hard nomeArquivo -> Redefine o índice e a árvore de trabalho. Quaisquer alterações nos arquivos rastreados na árvore de trabalho desde <commit> serão descartados.
