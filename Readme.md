@@ -56,3 +56,15 @@ Sempre que utilizarmos um merge, ele vai criar um commit extra juntando a branch
 - Commit extra (commit que não faz nada, não junta código, não cria arquivo novo, somente une);
 - Histório poluído (com a forma diamante, isso fica um pouco complicado para ler se tivermos várias branches);
 
+
+### REBASE
+Pega tudo o que estiver na branch separada e coloca no início da fila, deixando linear. Processo chamado de Fast Forward. Agora as branchs apontam para o mesmo commit.
+
+#### PRO
+- Evita commits extras;
+- Histórico linear;
+
+#### CONTRA
+- Perde ordem cronológica (Não se preocupa se o commit foi feito antes ou depois, mudando o histórico. Se mudarmos o histórico e outra pessoa estiver trabalhando na mesma branch, quando essa pessoa for commitar, vai dar conflito alegando que o histórico foi alterado);
+
+RECOMENDADO: Usar o rebase sempre que formos dar pull das modificações git pull --rebase Assim não teremos riscos de fazer mudanças de históricos que não poderíamos.
