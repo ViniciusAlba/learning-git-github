@@ -26,3 +26,16 @@
 - git reset --soft nomeArquivo -> Não toca no arquivo de índice ou na árvore de trabalho (mas redefine o cabeçalho para <commit>, assim como todos os modos fazem). Isso deixa todos os seus arquivos alterados como "Changes to be committe" (Alterações onde serão realizados os commits), como o git status colocaria.
 - git reset --mixed nomeArquivo -> Redefine o índice, mas não a árvore de trabalho (ou seja, os arquivos alterados são preservados, mas não marcados para um commit) e relata o que não foi atualizado. Esta é a ação predefinida.
 - git reset --hard nomeArquivo -> Redefine o índice e a árvore de trabalho. Quaisquer alterações nos arquivos rastreados na árvore de trabalho desde <commit> serão descartados.
+- git clone -> permite clonar todo um repositório para a sua máquina local.
+
+## O QUE É BRANCH?
+É um ponteiro móvel que leva a um commit.
+O primeiro branch que sempre teremos quando iniciamos um repositório chama-se "Master".
+Cada vez que fazemos um commit, o branch vai seguindo os commits. Mas podemos criar um outro branch que pode apontar para o mesmo commit, ou um outro branch apontando para um outro commit.
+
+## POR QUE USAR ESSA FORMA DE BRANCHS?
+- Poder modificar os arquivos sem alterar o local principal (master ou main);
+- Facilmente "desligável" (Podendo criar e apagar branchs com muita facilidade);
+- Múltiplas pessoas trabalhando em diferentes branchs sem um atrapalhar o outro;
+- Evita conflitos (Em um único branch com muitas pessoas trabalhando, eu poderia commitar e mais 100 pessoas commitarem ao mesmo tempo, isso seria ruim por conta do tempo. Teriamos que realinhar os commits no histórico e subir sem ter conflito nenhum).
+
