@@ -26,7 +26,11 @@
 - git reset --soft nomeArquivo -> Não toca no arquivo de índice ou na árvore de trabalho (mas redefine o cabeçalho para <commit>, assim como todos os modos fazem). Isso deixa todos os seus arquivos alterados como "Changes to be committe" (Alterações onde serão realizados os commits), como o git status colocaria.
 - git reset --mixed nomeArquivo -> Redefine o índice, mas não a árvore de trabalho (ou seja, os arquivos alterados são preservados, mas não marcados para um commit) e relata o que não foi atualizado. Esta é a ação predefinida.
 - git reset --hard nomeArquivo -> Redefine o índice e a árvore de trabalho. Quaisquer alterações nos arquivos rastreados na árvore de trabalho desde <commit> serão descartados.
-- git clone -> permite clonar todo um repositório para a sua máquina local.
+- git clone -> Permite clonar todo um repositório para a sua máquina local.
+- git checkout -b nomeBranch -> Cria uma nova branch e já entra.
+- git branch -> Mostra as branches existentes e em qual estamos.
+- git checkout nomeBranch -> Muda para a branch em que colocamos o nome.
+- git branch -D nomeBranch -> Deletamos uma branch.
 
 ## O QUE É BRANCH?
 É um ponteiro móvel que leva a um commit.
