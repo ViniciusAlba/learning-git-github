@@ -77,3 +77,21 @@ Para adicionar é bem simples, basta criar um arquivo 'vi .gitignore', apertar '
 Responsável por guardar modificações que ainda não foram commitadas em um arquivo em que podemos chamar depois quando for necessário. Muito utilizado para quando precisamos ir rapidinho para uma outra branch e não queremos levar a modificação porque ainda não terminamos a mesma. Então é só modificar, depois digitar 'git stash' e o git vai guardar a modificação. Para utilizarmos essa modificação depois precisamos digitar 'git stash apply' e aí a mágica acontece.
 - git stash list -> Mostra todos os stashes que estamos fazendo;
 - git stash clear -> Limpa tudo o que estiver no stash.
+
+## TAGS
+Utilizado para criar as versões do projeto.
+Temos um formato padrão:
+ - v -> sigla para a palavra versão.
+ - x -> chamada de Major. Representa a versão principal do projeto.
+ - y -> chamada de Minor. Representa adições de novas funcionalidades.
+ - z -> chamada de Patchs. Representa correções de bugs no sistema.
+Tag non-annontated:
+ git tag v1.0.0 -> Cria uma tag non-annontated possui referencia direta ao commit queela foi gerada.
+
+Gerar tag annotated:
+ git tag -a v1.0.0 -> Cria uma tag annotated não possui referencia direta ao commit que ela foi gerada, possuindo uma mensagem propria.
+
+Apagar uma tag:
+ git tag -d v1.0.0 -> Apaga a tag no seu git local.
+
+(Tag retirada do 4noobs da He4rt [!4noobs](https://github.com/DanielHe4rt/git4noobs/))
