@@ -94,4 +94,4 @@ Gerar tag annotated:
 Apagar uma tag:
  git tag -d v1.0.0 -> Apaga a tag no seu git local.
 
-(Tag retirada do 4noobs da He4rt [!4noobs](https://github.com/DanielHe4rt/git4noobs/))
+(Tag retirada do 4noobs da He4rt [4noobs](https://github.com/DanielHe4rt/git4noobs/))
