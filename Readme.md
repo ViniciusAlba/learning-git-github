@@ -68,3 +68,7 @@ Pega tudo o que estiver na branch separada e coloca no início da fila, deixando
 - Perde ordem cronológica (Não se preocupa se o commit foi feito antes ou depois, mudando o histórico. Se mudarmos o histórico e outra pessoa estiver trabalhando na mesma branch, quando essa pessoa for commitar, vai dar conflito alegando que o histórico foi alterado);
 
 RECOMENDADO: Usar o rebase sempre que formos dar pull das modificações git pull --rebase Assim não teremos riscos de fazer mudanças de históricos que não poderíamos.
+
+## GITIGNORE
+O gitignore é utilizado para ignorarmos arquivos que não queremos subir para a produção.
+Para adicionar é bem simples, basta criar um arquivo 'vi .gitignore', apertar 'i' para editá-lo. Após isso adicionamos o que queremos ignorar. Ex: queremos ignorar todos os arquivos com extensão json (também é possível fazer isso), basta colocar '*.json'.
