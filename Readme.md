@@ -71,4 +71,9 @@ RECOMENDADO: Usar o rebase sempre que formos dar pull das modificações git pul
 
 ## GITIGNORE
 O gitignore é utilizado para ignorarmos arquivos que não queremos subir para a produção.
-Para adicionar é bem simples, basta criar um arquivo 'vi .gitignore', apertar 'i' para editá-lo. Após isso adicionamos o que queremos ignorar. Ex: queremos ignorar todos os arquivos com extensão json (também é possível fazer isso), basta colocar '*.json'.
+Para adicionar é bem simples, basta criar um arquivo 'vi .gitignore', apertar 'i' para editá-lo. Após isso adicionamos o que queremos ignorar. Ex: queremos ignorar todos os arquivos com extensão json (também é possível fazer isso), basta colocar '(asterisco).json'.
+
+## GIT STASH
+Responsável por guardar modificações que ainda não foram commitadas em um arquivo em que podemos chamar depois quando for necessário. Muito utilizado para quando precisamos ir rapidinho para uma outra branch e não queremos levar a modificação porque ainda não terminamos a mesma. Então é só modificar, depois digitar 'git stash' e o git vai guardar a modificação. Para utilizarmos essa modificação depois precisamos digitar 'git stash apply' e aí a mágica acontece.
+- git stash list -> Mostra todos os stashes que estamos fazendo;
+- git stash clear -> Limpa tudo o que estiver no stash.
