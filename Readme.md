@@ -100,3 +100,7 @@ Apagar uma tag:
 Usamos quando estamos em uma grande feature e subimos para produção, ela quebra e não podemos usar o reset porque não queremos perder tudo. Então utilizamos o git revert para reverter as mudanças e colocar o código anterior novamente para subirmos. Após isso podemos refatorar depois de algum tempo esse código quebrado.
 'git revert hashDoCommit' Esse comando faz com que o commit seja revertido, ou seja, apagando o que tinhamos feito, sem sumir com o commit anterior.
 
+## APAGANDO TAGS E BRANCHES REMOTAS
+tag: git push origin :versaoTag
+branch: git push origin :nomeBranch
+
