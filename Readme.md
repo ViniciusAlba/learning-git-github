@@ -95,3 +95,8 @@ Apagar uma tag:
  git tag -d v1.0.0 -> Apaga a tag no seu git local.
 
 (Tag retirada do 4noobs da He4rt [4noobs](https://github.com/DanielHe4rt/git4noobs/))
+
+## REVERT
+Usamos quando estamos em uma grande feature e subimos para produção, ela quebra e não podemos usar o reset porque não queremos perder tudo. Então utilizamos o git revert para reverter as mudanças e colocar o código anterior novamente para subirmos. Após isso podemos refatorar depois de algum tempo esse código quebrado.
+'git revert hashDoCommit' Esse comando faz com que o commit seja revertido, ou seja, apagando o que tinhamos feito, sem sumir com o commit anterior.
+
